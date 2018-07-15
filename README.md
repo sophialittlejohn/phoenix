@@ -1,15 +1,19 @@
-# **Luna** - Group project 
+# **Luna** - Group Project Propulsion Academy
+
+## Personal Notes
+
+I worked on this project with two other boot camp students. The project lasted for a week and the goal was to finish as much as possible. My jobs were configuring Docker and the CI/CD process for the entire project and working on the frontend with React/Redux. The project was originally developed on Gitlab.
 
 ## History
 
-So we have recently discovered that Yelp wants to move his current stack to a new one based on Python/Django and ES6/React, they also want to replace thier old fashioned Bootstrap UI framework with a supercool UI. 
+So we have recently discovered that Yelp wants to move its current stack to a new one based on Python/Django and ES6/React, they also want to replace their old fashioned Bootstrap UI framework with a super cool UI. 
 
 For this task they will hire a whole new team and selection process is starting now. A prototype following their wireframes is mandatory for all those that want to participate.
 
 ----
-## Project specifications
+## Project Specifications
 
-### Docker integration
+### Docker Integration
 
 - Project can be developed inside a docker container.
 - Docker container has SSH access during development.
@@ -32,7 +36,7 @@ For this task they will hire a whole new team and selection process is starting 
 ### Clean code
 
 - Run `flake8` tests every time you commit on the **gitlab** runner server to make sure your stick to the PEP8 standard.
-- Make sure you structure your code enought that every file is not lager than 100-200 lines.
+- Make sure you structure your code enough so that every file is not lager than 100-200 lines.
 - Keep your imports clean and short by using file imports instead of direct imports of classes and definitions.
 
 ### Documentation
@@ -65,7 +69,7 @@ This is a list of features that Yelp would like to see in all web prototypes:
 - View the contact page of your Luna project.
 - View the about page of your Luna project.
 - Search/Filter for restaurants by string or category.
-- Search/Filter for reviews by string or category of the resturant.
+- Search/Filter for reviews by string or category of the restaurant.
 - Register himself on the website.
 
 #### Registered user can do:
@@ -77,9 +81,9 @@ This is a list of features that Yelp would like to see in all web prototypes:
 - Crate a comment on a restaurant review.
 - Like/Remove like a comment.
 - Reset his password.
-- Update his userprofile.
+- Update his user profile.
 - Delete his profile.
-- Delete the resturant he created.
+- Delete the restaurant he created.
 
 ---
 
@@ -106,14 +110,14 @@ This is a list of features that Yelp would like to see in all web prototypes:
     - Take away
     - Credit cards
     - WIFI
-    - Noice level
+    - Noise level
     - Waiter service
 
 #### A restaurant review contains
 
 - ID
 - Text-Content
-- Raiting | 1-5 stars
+- Rating | 1-5 stars
 - Date created
 - Date modified
 - User
@@ -152,7 +156,7 @@ This is a list of features that Yelp would like to see in all web prototypes:
 **Registration**
 
 - `/api/registration/` **POST**: Register new user by asking for an email (send email validation code).
-- `/api/registration/validate/` **POST**: Validate a new registred user with validation code sent by email. 
+- `/api/registration/validate/` **POST**: Validate a new registered user with validation code sent by email. 
 
 ---
 **Auth**
@@ -175,11 +179,11 @@ This is a list of features that Yelp would like to see in all web prototypes:
 **Restaurant**
 - `/api/restaurants/` **GET**: Get the list of all the restaurant.
 - `/api/resturants/new/` **POST**": Create a new restaurant.
-- `/api/restaurants/catrgory/<int:category_id>/` **GET**: Get the all the resturants by category.
-- `/api/restaurants/user/<int:user_id>/` **GET**: Get the all the resturants created by a specific user in chronological order.
+- `/api/restaurants/catrgory/<int:category_id>/` **GET**: Get the all the restaurants by category.
+- `/api/restaurants/user/<int:user_id>/` **GET**: Get the all the restaurants created by a specific user in chronological order.
 - `/api/resturants/<int:id>/` **GET**: Get the details of a restaurant providing the id of the restaurant.
-- `/api/resturants/<int:id>/` **POST**: Update a resturant by id (only by owner or resturant admin).
-- `/api/resturants/<int:id>/` **DELETE**: Delete a resturant by id (only by owner or resturant admin).
+- `/api/resturants/<int:id>/` **POST**: Update a restaurant by id (only by owner or restaurant admin).
+- `/api/resturants/<int:id>/` **DELETE**: Delete a restaurant by id (only by owner or restaurant admin).
 
 ---
 **Reviews**
@@ -208,11 +212,11 @@ This is a list of features that Yelp would like to see in all web prototypes:
 
 ---
 **Users**
-- `/api/me/` **GET**: Get the userprofile.
-- `/api/me/` **POST**: Update the userprofile.
+- `/api/me/` **GET**: Get the user profile.
+- `/api/me/` **POST**: Update the user profile.
 - `/api/users/list/` **GET**: Get all users.
 - `/api/users/?search=<str:search_string>/` **GET**: Search for a user.
-- `/api/users/<int:user_id>/` **GET**: specific userprofile.
+- `/api/users/<int:user_id>/` **GET**: specific user profile.
 
 ---
 
@@ -231,11 +235,10 @@ This is a list of features that Yelp would like to see in all web prototypes:
 
 ### Deployment
 
-- You need to be able to deploy your project with one click on **gitlab** to your instance on digitalocean.
-- Nginx and Postgres database are running in seperate containers connected to your main app container.
+- You need to be able to deploy your project with one click on **gitlab** to your instance on Digitalocean.
+- Nginx and Postgres database are running in separate containers connected to your main app container.
 
 ---
-**Reminder** The classroom is open 24/7! 
 
 [drf-custom-docs]: http://www.django-rest-framework.org/topics/documenting-your-api/#built-in-api-documentation
 [jwt-auth]: https://github.com/davesque/django-rest-framework-simplejwt
