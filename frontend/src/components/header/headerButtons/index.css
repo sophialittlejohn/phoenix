@@ -1,0 +1,38 @@
+.sign-up-button {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border: none;
+    -webkit-border-radius: 0 52px 52px 0;
+    border-radius: 0 52px 52px 0;
+    font: normal 100% / normal Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #e47d31;
+    margin-left: 2px;
+    margin-top: -6px;
+    outline: none;
+}
+
+.login-button {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border: none;
+    -webkit-border-radius: 52px 0 0 52px;
+    border-radius: 52px 0 0 52px;
+    font: normal 100% / normal Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #e47d31;
+    margin-top: -6px;
+    outline: none;
+}

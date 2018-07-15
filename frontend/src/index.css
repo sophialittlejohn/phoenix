@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #F8F8F8;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-size: 2.2em;
+}
+
+/* use h2 for all title on pages */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4C4C4C;
+}
+
+h3 { font-size: 1.8em; }
+
+h4 { font-size: 1.6em; }
+
+h5 { font-size: 1.4em; }
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+}

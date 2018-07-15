@@ -1,0 +1,14 @@
+.nav-item {
+    margin: 10px 40px 50px 50px;
+    float: right;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.selected {
+    font-weight: bold;
+    padding-bottom: 13px;
+    border-bottom: 5px solid #E47D31;
+}

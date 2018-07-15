@@ -1,0 +1,42 @@
+version: '2'
+services:
+  database:
+    image: postgres:9.6.1
+    restart: always
+    env_file:
+      - prod.env
+    volumes:
+      - database:/var/lib/postgresql/data
+
+  app:
+    image: registry.gitlab.propulsion-home.ch/full-stack/batch-2018-03/group-projects/phoenix:master
+    restart: always
+    env_file:
+      - prod.env
+    depends_on:
+      - database
+    command: '/scripts/wait-for-it.sh database:5432 -- sh /scripts/run.sh'
+    volumes:
+      - run:/run
+      - static-files:/static-files
+      - media-files:/media-files
+      - frontend:/frontend-build
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - run:/run
+      - static-files:/static-files
+      - media-files:/media-files
+      - frontend:/frontend
+      - ./nginx:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    command: /bin/bash -c "nginx -g 'daemon off;'"
+
+volumes:
+  database:
+  static-files:
+  media-files:
+  frontend:
+  run:

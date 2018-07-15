@@ -1,0 +1,16 @@
+.restaurant-contacts-container {
+    height: 168px;
+    width: 100%;
+    border: 1px solid #7F7F7F;
+    color: #4C4C4C;
+}
+
+td {
+    height: 50px;
+}
+
+.contact-icon {
+    width: 75px;
+    text-align: center;
+}
+

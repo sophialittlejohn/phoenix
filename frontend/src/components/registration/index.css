@@ -1,0 +1,50 @@
+.title-underline {
+    width: 100px;
+    height: 20px;
+    border-bottom: 3px solid #E47D31;
+    margin: 10px auto;
+}
+
+.form-wrapper {
+    padding: 50px 100px;
+}
+
+.form-style {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    width:400px;
+}
+
+.input-style {
+    height: 52px;
+    width: 387px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.input-style:first-of-type {
+    margin-top: 80px;
+}
+
+.submit-form {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #E47D31;
+    border-radius: 30px;
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    color: #FFFFFF;
+    outline: none;
+}
+
+
+.monkey-text {
+    margin: 30px auto;
+    max-width: 400px;
+    text-align: center;
+}

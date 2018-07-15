@@ -1,0 +1,6 @@
+# docker-compose.ci.yml
+version: '2'
+services:
+  app:
+    image: "${CI_PIPELINE_ID}:${CI_BUILD_REF_NAME}"
+

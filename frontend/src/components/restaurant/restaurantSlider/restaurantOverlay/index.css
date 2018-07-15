@@ -1,0 +1,38 @@
+.overlay-container {
+  height: 204px;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(127, 127, 127, 0.5);
+}
+
+.overlay-content {
+  margin-top: 30px;
+  margin-left: 140px;
+  // overflow: hidden;
+  color: white;
+  float: left;
+  text-align: left;
+}
+
+.overlay-content div {
+    padding: 8px 0px;
+}
+
+.restaurant-name {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.restaurant-category {
+    font-size: 16pt;
+}
+
+.restaurant-star-rating {
+    font-size: 12pt;
+}
+
+.restaurant_reviews_number {
+    margin-left: 5px;
+}
+
+

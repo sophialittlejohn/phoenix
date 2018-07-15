@@ -1,0 +1,33 @@
+version: '3'
+services:
+  database:
+    image: postgres:9.6.1
+    restart: always
+    env_file:
+      - dev.env # add this file at the top level of the file
+    volumes:
+      - database:/var/lib/postgresql/data
+  app:
+    image: registry.gitlab.propulsion-home.ch/full-stack/batch-2018-03/group-projects/phoenix:master
+    # image comes from gitlab/registry
+    restart: always
+    env_file:
+      - dev.env
+    ports:
+      - '8070:8000'
+      - '4321:22'
+    command: "/usr/sbin/sshd -D"
+#     volumes is used so that when we move files in our project the changes get transferred over to the container
+    depends_on:
+      - database
+    links:
+      - database
+    volumes:
+      - ./app:/app
+      - ./media-files:/media-files
+      - ./static-files:/static-files
+      - ./scripts:/scripts
+
+# this tells docker that there is a volume called database
+volumes:
+  database:

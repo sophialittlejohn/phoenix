@@ -1,0 +1,15 @@
+.slider-container {
+    height: 496px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+
+.restaurant-image img{
+    height: 496px;
+    width: 1440px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

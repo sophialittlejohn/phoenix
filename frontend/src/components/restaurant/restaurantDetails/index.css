@@ -1,0 +1,10 @@
+.restaurant-details-container {
+    height: 336px;
+    width: 361px;
+    border: 1px solid #7F7F7F;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: -470px;
+    margin-left: 64%;
+}

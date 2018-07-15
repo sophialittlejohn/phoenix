@@ -1,0 +1,35 @@
+.restaurant-filter-container { grid-area: filter; }
+.restaurant-reviews-container { grid-area: reviews; }
+.restaurant-info-container { grid-area: right; width: 70%}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'filter right'
+    'reviews right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.submit-button {
+    text-align: center;
+    margin: 50px 10px;
+    background-color: #E47D31;
+    border-radius: 30px;
+    width: 200px;
+    height: 39px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid #E47D31;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}

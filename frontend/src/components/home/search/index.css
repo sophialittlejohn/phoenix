@@ -1,0 +1,45 @@
+.cover-img {
+    width: 1440px;
+    height: 390px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+}
+
+.search-style {
+    height: 52px;
+    width: 387px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.form-wrapper-search {
+    padding: 100px 28%;
+}
+
+.search-form-style {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.submit-search {
+    text-align: center;
+    margin: 50px 10px;
+    background-color: #E47D31;
+    border-radius: 30px;
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid #E47D31;
+}

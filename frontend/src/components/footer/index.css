@@ -1,0 +1,36 @@
+.footer-style {
+    background-color: #FFFFFF;
+    border-top: 1px solid #E7E7E7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1440px;
+    color: #646363;
+    top: 90%;
+    max-height: 100vh;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+
+.hr {
+    color: #e7e7e7;
+    height: 1px;
+    width: 100%;
+}
+
+hr {
+   color: #e7e7e7;
+    height: 1px;
+    width: 100%;
+}
+
+.copy-right {
+    height: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.navigation {
+    height: 20px;
+}

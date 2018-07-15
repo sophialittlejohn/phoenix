@@ -1,0 +1,13 @@
+.header-container {
+  height: 70px;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.header-content {
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+

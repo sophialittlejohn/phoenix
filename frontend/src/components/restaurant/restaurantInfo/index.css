@@ -1,0 +1,13 @@
+.restaurant-info-row {
+    color: #4C4C4C;
+}
+
+td {
+    height: 50px;
+    text-align: left;
+}
+
+.hours-icon, .price-icon {
+    width: 75px;
+    text-align: center;
+}

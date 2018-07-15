@@ -1,0 +1,17 @@
+name: app
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - psycopg2=2.7.4
+  - uwsgi=2.0.15
+  - pip:
+    - django==2.0.4
+    - djangorestframework==3.7.7
+    - djangorestframework-simplejwt==3.2.3
+    - django-countries==5.3
+    - Pillow==5.1.0
+    - coreapi==2.3.3
+    - flake8==3.5.0
+    - coverage==4.3.4
+    - django-cors-headers==2.2.0
