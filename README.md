@@ -227,11 +227,6 @@ This is a list of features that Yelp would like to see in all web prototypes:
 - Send an email to the user if one of his reviews gets liked.
 - Send an email to the user if someone writes a comment on his review.
 
-### Email account for sending emails
-
-- Type: Gmail
-- Email: **students@propulsionacademy.com**
-- Password: **VNZ4NVUTa8LM{i38{zCGjCG6ewjaNnR8Njhph@Rf**
 
 ### Deployment
 
